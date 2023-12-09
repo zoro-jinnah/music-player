@@ -78,7 +78,7 @@ const wrapper = document.querySelector(".wrapper"),
             let totalMin = Math.floor(mainAdDuration/ 60);
             let totalSec = Math.floor(mainAdDuration % 60);
             if (totalSec < 10 ){
-                totalSec = `{totalSec}`;
+                totalSec = `0${totalSec}`;
             }
             musicDuration.innerText = `${totalMin}:${totalSec}`;
            });
